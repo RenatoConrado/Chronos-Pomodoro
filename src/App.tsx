@@ -1,13 +1,22 @@
-import { TimerIcon } from "lucide-react";
-import Heading from "./components/Heading";
+import Container from "./components/Container";
+import Countdown from "./components/Countdown";
+import Logo from "./components/Logo";
+import Menu from "./components/Menu";
 
 function App() {
   return (
     <>
-      <Heading>
-        Olá Heading <button><TimerIcon /></button>
-      </Heading>
-      <h1>Hello World</h1>
+      <Container>
+        <Logo />
+      </Container>
+
+      <Container>
+        <Menu />
+      </Container>
+
+      <Container>
+        <Countdown />
+      </Container>
     </>
   );
 }
