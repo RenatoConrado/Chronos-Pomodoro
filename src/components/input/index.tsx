@@ -6,11 +6,11 @@ interface Props extends React.ComponentProps<"input"> {
   type?: React.HTMLInputTypeAttribute;
 }
 
-function Input({ id, label: name, type = "text", ...rest }: Props) {
+function Input({ id, label: name, type = "text", ...props }: Props) {
   return (
     <>
       {name && <label htmlFor={id}>{name}</label>}
-      <input className={styles.input} type={type} id={id} {...rest} />
+      <input className={styles.input} type={type} id={id} {...props} />
     </>
   );
 }

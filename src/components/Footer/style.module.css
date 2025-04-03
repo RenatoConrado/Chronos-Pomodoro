@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  width: 300px;
+
+  & a {
+    font-size: 1.4rem;
+    color: var(--text-muted);
+    text-decoration: none;
+  }
+
+  & a:hover {
+    color: var(--text-muted);
+    text-decoration: underline var(--link-hover);
+  }
+}

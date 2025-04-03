@@ -6,23 +6,26 @@
   padding-top: 3.2rem;
 }
 
-.menu:hover {
-  filter: brightness(80%);
-  transition: all 0.2s ease-in-out;
-}
-
 .menuLink {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.4rem;
-  text-decoration: none;
+  display: block;
   background: var(--primary);
   color: var(--text-over-primary);
   padding: 1.2rem;
   border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
 
-  svg {
+  & a {
+    text-decoration: none;
+    color: var(--text-over-primary);
+  }
+
+  &:hover {
+    filter: brightness(80%);
+    transition: all 0.2s ease-in;
+  }
+
+  & svg {
     width: 2.4rem;
     height: 2.4rem;
   }

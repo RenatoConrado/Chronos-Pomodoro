@@ -1,0 +1,28 @@
+.button {
+  border: none;
+  min-width: 24rem;
+  min-height: 4rem;
+  border-radius: 0.8rem;
+  padding: 1.2rem 0;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+
+  &:hover {
+    filter: brightness(80%);
+  }
+
+  & svg {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.green {
+  background: var(--primary);
+  color: var(--text-over-primary);
+}
+
+.red {
+  background: var(--error);
+  color: var(--text-over-primary);
+}

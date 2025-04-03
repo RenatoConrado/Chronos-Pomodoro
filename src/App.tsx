@@ -1,8 +1,12 @@
+import { PlayCircleIcon } from "lucide-react";
+import Button from "./components/Button";
 import Container from "./components/Container";
 import Countdown from "./components/Countdown";
+import Cycles from "./components/Cycles";
 import Input from "./components/input";
 import Logo from "./components/Logo";
 import Menu from "./components/Menu";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,10 +34,14 @@ function App() {
           </div>
 
           <div className="formRow">
-            <p>Ciclos</p>
-            <button type="button">Enviar</button>
+            <Cycles />
+            <Button><PlayCircleIcon /></Button>
           </div>
         </form>
+      </Container>
+
+      <Container>
+        <Footer>Entenda como funciona a técnica pomodoro</Footer>
       </Container>
     </>
   );
